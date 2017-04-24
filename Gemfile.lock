@@ -1,3 +1,9 @@
+GIT
+  remote: https://github.com/yomoda07/yomoda_view_tool
+  revision: 81d0883e4d61e227f7c341d3bbb921c009657ec9
+  specs:
+    yomoda_view_tool (0.1.0)
+
 GEM
   remote: https://rubygems.org/
   specs:
@@ -203,6 +209,7 @@ DEPENDENCIES
   tzinfo-data
   uglifier (>= 1.3.0)
   web-console (>= 3.3.0)
+  yomoda_view_tool!
 
 BUNDLED WITH
    1.14.6
