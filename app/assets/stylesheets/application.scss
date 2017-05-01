@@ -75,7 +75,7 @@ body {
 .nav-masthead .nav-link {
   padding: .25rem 0;
   font-weight: bold;
-  color: rgba(255,255,255,.5);
+  color: rgba(255,255,255,.8);
   background-color: transparent;
   border-bottom: .25rem solid transparent;
 }
@@ -205,11 +205,15 @@ body {
   z-index: -100;
   -webkit-transform: translateX(-50%) translateY(-50%);
   transform: translateX(-50%) translateY(-50%);
-  background: image-url('home_bg.png') no-repeat;
   -webkit-background-size: cover;
   background-size: cover;
 }
 
 .app-footer {
   color: white;
+}
+
+.home-title{
+  font-size: 80px;
+  margin-bottom: 30px;
 }
