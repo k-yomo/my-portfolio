@@ -1,6 +1,6 @@
 $(document).ready(function() {
     setTimeout(function(){
-        $('.typing').typeIt({
+        $(".typing").typeIt({
             speed: 100,
             lifeLike: false,
             autoStart: false
