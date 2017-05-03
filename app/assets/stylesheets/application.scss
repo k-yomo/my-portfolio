@@ -223,3 +223,16 @@ body {
   margin-bottom: 30px;
   font-size: 22px;
 }
+
+.tech-news {
+  color: #333;
+  margin: 10px;
+}
+
+.tech-news a {
+  color: blue;
+}
+
+.tech-news > .card {
+  padding: 20px;
+}
