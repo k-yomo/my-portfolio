@@ -34,7 +34,7 @@ h6, .h6 {
  */
 
 .container {
-  max-width: 60rem;
+  max-width: 65rem;
 }
 
 
@@ -142,10 +142,11 @@ h6, .h6 {
  */
 
 .blog-post {
-  border: solid 1px #ddd;
+  border: solid 1px #eee;
   border-radius: 5px;
-  padding: 10px 25px;
+  padding: 20px 25px 7px;
   margin-bottom: 2rem;
+  box-shadow: 0 6px 5px -6px #777;
 }
 .blog-post-title {
   margin-bottom: .25rem;
