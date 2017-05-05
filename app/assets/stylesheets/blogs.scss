@@ -174,9 +174,12 @@ h6, .h6 {
 .blog-footer p:last-child {
   margin-bottom: 0;
 }
+
+
 /*
- * Footer
+ * Custom
  */
+
 
 .social-link li {
   font-size: 2.5em;
@@ -217,6 +220,16 @@ h6, .h6 {
   text-align: right;
 }
 
+.blogcrumb a {
+  font-size: 1.3em;
+  margin: 0 5px 0;
+  text-align: right;
+}
+
+.blog-nav {
+  margin-bottom: 40px;
+}
+
 
 /*
  * Contents
@@ -231,8 +244,5 @@ h6, .h6 {
   border-radius: 3px;
   }
 
-.blogcrumb a {
-  font-size: 1.3em;
-  margin: 0 5px 0;
-  text-align: right;
-}
+
+
