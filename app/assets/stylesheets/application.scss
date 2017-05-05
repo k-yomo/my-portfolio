@@ -1,4 +1,5 @@
 @import "bootstrap";
+@import "font-awesome";
 @import "gritter";
 
 /*
@@ -27,14 +28,25 @@ a:hover {
  * Base structure
  */
 
+
 html,
 body {
   height: 100%;
+  font-family: 'Roboto', sans-serif;
 }
 body {
   color: #fff;
   text-align: center;
   text-shadow: 0 .05rem .1rem rgba(0,0,0,.5);
+}
+
+h1, .h1,
+h2, .h2,
+h3, .h3,
+h4, .h4,
+h5, .h5,
+h6, .h6 {
+  font-family: 'Montserrat', sans-serif;
 }
 
 /* Extra markup and styles for table-esque vertical and horizontal centering */
@@ -157,7 +169,7 @@ body {
   .masthead,
   .mastfoot,
   .cover-container {
-    width: 55rem;
+    width: 60rem;
   }
 }
 
@@ -189,10 +201,6 @@ body {
 
 .app-nav {
   margin: 0 13px;
-}
-
-.about-text {
-  text-align: left;
 }
 
 #background {
@@ -235,4 +243,25 @@ body {
 
 .tech-news > .card {
   padding: 20px;
+}
+
+.app-card-container {
+  color: #444;
+  text-align: left;
+}
+
+.app-card-container > .card {
+  padding: 20px 40px 20px;
+}
+
+.app-card-container a {
+  color: #0275d8;
+}
+
+.card-block {
+  margin: 5px 0;
+}
+
+.skill {
+  margin: 10px 0;
 }
