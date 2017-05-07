@@ -19,7 +19,7 @@ puts "1 Admin user created"
 
 
 Topic.create!(
-    title: "Unclassified"
+    title: "Unclassified")
 
 Topic.create!(
     title: "Coding")
