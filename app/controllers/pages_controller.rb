@@ -5,7 +5,7 @@ class PagesController < ApplicationController
   end
 
   def about
-    @skills = Skill.all
+    @skills = Skill.all.order(:id)
   end
 
   def contact
