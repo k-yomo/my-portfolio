@@ -40,30 +40,15 @@ end
 puts "3 blog posts created"
 
 
-  Skill.create!(
-      title: "Ruby on rails",
-      percent_utilized: 10
-  )
+Skill.create!(title: "Ruby on rails", percent_utilized: 10)
 
-Skill.create!(
-    title: "javascript",
-    percent_utilized: 20
-)
+Skill.create!(title: "javascript", percent_utilized: 20)
 
-Skill.create!(
-    title: "HTML + CSS",
-    percent_utilized: 40
-)
+Skill.create!(title: "HTML + CSS", percent_utilized: 50)
 
-Skill.create!(
-    title: "SEO",
-    percent_utilized: 60
-)
+Skill.create!(title: "SEO", percent_utilized: 60)
 
-Skill.create!(
-    title: "Analytics",
-    percent_utilized: 30
-)
+Skill.create!(title: "Analytics", percent_utilized: 30)
 
 
 8.times do |portfolio_item|
