@@ -43,6 +43,10 @@ h6, .h6 {
  * Masthead for nav
  */
 
+.bg-faded {
+  background-color: #292b2c;
+}
+
 .blog-masthead {
   margin-bottom: 3rem;
   background-color: #428bca;
@@ -59,14 +63,36 @@ h6, .h6 {
 }
 .nav-link:hover,
 .nav-link:focus {
-  color: #fff;
+  color: white;
   background-color: transparent;
 }
 
-/* Active state gets a caret at the bottom */
-.nav-link.active {
-  color: #fff;
+.navbar-light .navbar-nav .nav-link {
+  color: white;
+  opacity: 0.7;
 }
+.navbar-light .navbar-nav .nav-link:focus, .navbar-light .navbar-nav .nav-link:hover {
+  color: white;
+  opacity: 1.0;
+}
+
+
+.navbar-light .navbar-brand, .navbar-light .navbar-toggler {
+  color: white;
+  opacity: 1.0;
+}
+
+.navbar-light .navbar-brand:focus, .navbar-light .navbar-brand:hover, .navbar-light .navbar-toggler:focus, .navbar-light .navbar-toggler:hover {
+  color: white;
+  opacity: 1.0;
+}
+
+  /* Active state gets a caret at the bottom */
+.navbar-light .navbar-nav .open > .nav-link, .navbar-light .navbar-nav .active > .nav-link, .navbar-light .navbar-nav .nav-link.open, .navbar-light .navbar-nav .nav-link.active {
+  color: white;
+  opacity: 1.0;
+}
+
 .nav-link.active:after {
   position: absolute;
   bottom: 0;
@@ -243,6 +269,5 @@ h6, .h6 {
   background-color: #f6f8fa;
   border-radius: 3px;
   }
-
 
 
