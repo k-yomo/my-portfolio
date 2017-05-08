@@ -48,9 +48,20 @@
           data-toggle="collapse"
           data-target="#education"
           aria-expanded="false"
-          aria-controls="jobHistory"
+          aria-controls="education"
           >
             Education
+          </button>
+
+          <button
+          class="btn btn-primary"
+          type="button"
+          data-toggle="collapse"
+          data-target="#interview"
+          aria-expanded="false"
+          aria-controls="interview"
+          >
+            Interview
           </button>
         </p>
 
@@ -80,6 +91,30 @@
                 Currently in Aoyama Gakuin University majoring in marketing.
               </div>
              </div>
+            </div>
+          </div>
+
+          <div class="collapse" id="interview">
+            <div class="card card-block">
+              <div class="row">
+                <div class="col-md-5">
+                  <%= image_tag("https://01intern.com/magazine/wp-content/uploads/2017/03/a83be28929594f7522cbd850d8d298bb.jpg", height: '100', width: '150') %>
+                </div>
+                <div class="col-md-7 about-me-card">
+                  Interviewed by recruitment agency.
+                </div>
+              </div>
+            </div>
+
+            <div class="card card-block">
+              <div class="row">
+                <div class="col-md-5">
+                  <%= image_tag("http://exidea.co.jp/new/wp-content/uploads/2017/03/IMG_4485.jpg", height: '100', width: '150') %>
+                </div>
+                <div class="col-md-7 about-me-card">
+                  Interviewed by the company I worked at.
+                </div>
+              </div>
             </div>
           </div>
         </p>
