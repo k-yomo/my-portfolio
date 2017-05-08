@@ -84,7 +84,7 @@
           <div class="collapse" id="education">
             <div class="card card-block">
              <div class="row">
-              <div class="col-md-3 ">
+              <div class="col-md-3">
                 <%= image_tag("agu-logo.jpg", height: '80', width: '80') %>
               </div>
               <div class="col-md-9 about-me-card">
@@ -98,7 +98,11 @@
             <div class="card card-block">
               <div class="row">
                 <div class="col-md-5">
-                  <%= image_tag("https://01intern.com/magazine/wp-content/uploads/2017/03/a83be28929594f7522cbd850d8d298bb.jpg", height: '100', width: '150') %>
+                  <div class="interview-image">
+                    <a target="_blank" href="https://01intern.com/magazine/archives/8718">
+                      <%= image_tag("https://01intern.com/magazine/wp-content/uploads/2017/03/a83be28929594f7522cbd850d8d298bb.jpg", height: '100', width: '150') %>
+                    </a>
+                  </div>
                 </div>
                 <div class="col-md-7 about-me-card">
                   Interviewed by recruitment agency.
@@ -109,7 +113,11 @@
             <div class="card card-block">
               <div class="row">
                 <div class="col-md-5">
-                  <%= image_tag("http://exidea.co.jp/new/wp-content/uploads/2017/03/IMG_4485.jpg", height: '100', width: '150') %>
+                  <div class="interview-image">
+                    <a target="_blank" href="http://exidea.co.jp/interview/intern-interview06/">
+                      <%= image_tag("http://exidea.co.jp/new/wp-content/uploads/2017/03/IMG_4485.jpg", height: '100', width: '150') %>
+                    </a>
+                  </div>
                 </div>
                 <div class="col-md-7 about-me-card">
                   Interviewed by the company I worked at.

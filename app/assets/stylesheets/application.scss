@@ -252,6 +252,7 @@ h6, .h6 {
 
 .app-card-container > .card {
   padding: 20px 40px 20px;
+  z-index: 50;
 }
 
 .app-card-container a {
@@ -268,4 +269,12 @@ h6, .h6 {
 
 .about-me-card {
   padding-left: 0;
+}
+
+.interview-image {
+  text-align: center;
+}
+
+.interview-image:hover {
+  box-shadow: 0 7px 5px -6px #777;
 }
