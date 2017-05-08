@@ -17,6 +17,11 @@ body {
 
 .navbar {
   margin-bottom: 0;
+  padding: 1.1rem 1rem
+}
+
+.navbar-brand {
+  font-size: 1.5rem;
 }
 
 .jumbotron {
@@ -75,3 +80,6 @@ footer p {
   padding-top: 30px;
 }
 
+.navbar-inverse .navbar-toggler:hover {
+  border-color: rgba(255, 255, 255, 0.3);
+}
