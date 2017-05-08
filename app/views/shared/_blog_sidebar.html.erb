@@ -6,14 +6,14 @@
 
   <div class="sidebar-module sidebar-module-inset">
     <h4>About</h4>
-    <p>I am Kanji Yomoda and student at a Aoyama Gakuin University, majoring in marketing in Japan. I'm also learning Ruby and rails by my self now.</p>
+    <p>This blog is a memorandum about learning web development, including Ruby on Rails, javascript, databese, and so on. </p>
   </div>
 
 
 
   <div class="sidebar-module">
     <h4>Topics</h4>
-    <% @side_bar_topics.each do |topic| %>
+    <% @side_bar_topics.each do  |topic| %>
         <span><%= link_to topic.title, topic_path(topic) %></span>
     <% end %>
   </div>
