@@ -6,7 +6,7 @@
 
   <hr>
   <p>
-    <%= markdown blog.body %>
+    <%= markdown blog.body.truncate(200) %>
   </p>
 
   <p class="blog-post-meta posted-date">

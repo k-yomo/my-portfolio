@@ -32,6 +32,7 @@ class BlogsController < ApplicationController
   # GET /blogs/new
   def new
     @blog = Blog.new
+    @blog.topic_id = 1
   end
 
   # GET /blogs/1/edit
