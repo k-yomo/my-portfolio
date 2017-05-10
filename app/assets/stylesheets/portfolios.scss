@@ -59,6 +59,14 @@ body {
   margin-bottom: 0;
 }
 
+.jumbotron {
+  background-image: url(portfolio-background.jpg);
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
 .jumbotron-heading {
   font-size: 3rem;
   font-weight: bold;
