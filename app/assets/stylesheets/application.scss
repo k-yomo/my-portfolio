@@ -96,6 +96,7 @@ h6, .h6 {
 .nav-masthead .nav-link:hover,
 .nav-masthead .nav-link:focus {
   border-bottom-color: rgba(255,255,255,.25);
+  color: #fff;
 }
 
 .nav-masthead .nav-link + .nav-link {
@@ -294,6 +295,7 @@ h6, .h6 {
   color: #fff;
   line-height: 50px;
   border-radius: 5px;
+  font-weight: 600;
 }
 .button-lid::before,
 .button-lid::after {
