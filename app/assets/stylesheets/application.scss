@@ -280,3 +280,38 @@ h6, .h6 {
   box-shadow: 0 7px 5px -6px #777;
   opacity: 0.8;
 }
+
+
+.button-lid {
+  display: inline-block;
+  width: 200px;
+  height: 54px;
+  text-align: center;
+  text-decoration: none;
+  outline: none;
+  background-color: transparent;
+  border: 2px solid #fff;
+  color: #fff;
+  line-height: 50px;
+  border-radius: 5px;
+}
+.button-lid::before,
+.button-lid::after {
+  position: absolute;
+  z-index: -1;
+  display: block;
+  content: '';
+}
+.button-lid,
+.button-lid::before,
+.button-lid::after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-transition: all .3s;
+  transition: all .3s;
+}
+.button-lid:hover {
+  background-color: rgba(255, 255, 255, .2);
+  text-decoration: none;
+}
