@@ -1,16 +1,35 @@
 <div class="col-md-4">
   <div class="card" data-id="<%= portfolio_item.id %>">
     <div class="portfolio-image">
+
       <a href="/portfolio/<%= portfolio_item.id %>">
         <%= image_tag portfolio_img(portfolio_item.thumb_image, 'thumb'), width: "100%" %>
+        <div class="portfolio-detail">
+          detail
+        </div>
       </a>
+
+
     </div>
+
     <div class="card-text">
       <h4 class="darkgreen">
         <%= link_to portfolio_item.title, portfolio_show_path(portfolio_item) %>
       </h4>
-
       <%= portfolio_item.subtitle %>
     </div>
+
   </div>
 </div>
+
+<script type="text/javascript" charset="utf-8">
+  $(function() {
+    $( ".portfolio-detail" ).mouseover(function() {
+      $(".portfolio-imageo").addClass('portfolio-image-hover');
+      $(this).parent().find("img").addClass('portfolio-img-hover');
+    }).mouseout(function () {
+      $(".portfolio-imageo").removeClass('portfolio-image-hover');
+      $(this).parent().find("img").removeClass('portfolio-img-hover');
+    });
+  });
+</script>
