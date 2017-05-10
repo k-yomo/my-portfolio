@@ -85,6 +85,12 @@ h6, .h6 {
   margin-bottom: 0;
 }
 
+.masthead-brand:hover a {
+  margin-bottom: 0;
+  text-decoration: none;
+  opacity:0.8;
+}
+
 .nav-masthead .nav-link {
   padding: .25rem 0;
   font-weight: bold;
@@ -178,12 +184,12 @@ h6, .h6 {
 /* Custom Style */
 
 .card-block {
-  color: #444;
+  color: #333;
   text-align: left;
 }
 
 .auth-links a {
-  color: #444;
+  color: #333;
 }
 
 .form {
@@ -235,7 +241,7 @@ h6, .h6 {
 }
 
 .tech-news {
-  color: #444;
+  color: #333;
   margin: 10px;
 }
 
