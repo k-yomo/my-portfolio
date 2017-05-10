@@ -14,14 +14,15 @@
       <hr>
 
       <h3>Technologies Used:</h3>
-
-      <% @portfolio_item.technologies.each do |t| %>
-          <p><%= t.name %></p>
-      <% end %>
+      <ul>
+        <% @portfolio_item.technologies.each do |t| %>
+            <li><%= t.name %></li>
+        <% end %>
+      </ul>
 
       <% if logged_in?(:site_admin) %>
         <div>
-          <%= link_to "Edit Item",edit_portfolio_path(@portfolio_item), class: 'btn btn-warning' %>
+          <%= link_to "Edit Item",edit_portfolio_path(@portfolio_item), class: 'btn btn-primary' %>
         </div>
       <% end %>
       <br>
