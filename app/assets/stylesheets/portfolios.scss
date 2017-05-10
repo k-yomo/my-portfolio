@@ -52,14 +52,6 @@ body {
   padding-top: 6rem;
   padding-bottom: 6rem;
   margin-bottom: 0;
-  background-color: #fff;
-}
-
-.jumbotron p:last-child {
-  margin-bottom: 0;
-}
-
-.jumbotron {
   background: url("https://s3.ca-central-1.amazonaws.com/kanji-portfolio-bucket/uploads/background-image/portfolio-background.jpg") no-repeat fixed center;
   background-size: cover;
 }
@@ -157,4 +149,9 @@ footer p {
   -o-transition: -o-transform 0.4s linear;
   -ms-transition: -ms-transform 0.4s linear;
   transition: all 0.4s linear;
+}
+
+.portfolio-image img:hover{
+  opacity: 0.3;
+  transform: scale(1.1);
 }
