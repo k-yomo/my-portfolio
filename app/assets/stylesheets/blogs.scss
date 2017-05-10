@@ -159,6 +159,12 @@ a:hover {
   font-weight: normal;
     color: #0C555D;
 }
+
+.blog-title a:hover {
+  color: #0C555D;
+  opacity: 0.7;
+}
+
 .blog-description {
   font-size: 1.1rem;
   color: #666;
