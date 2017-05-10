@@ -60,10 +60,7 @@ body {
 }
 
 .jumbotron {
-  background-image: url(portfolio-background.jpg);
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
+  background: url(portfolio-background.jpg) no-repeat fixed center;
   background-size: cover;
 }
 
