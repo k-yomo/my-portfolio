@@ -800,7 +800,6 @@ body:after {
   -webkit-transition: opacity .2s cubic-bezier(.785, .135, .15, .86);
   transition: opacity .2s cubic-bezier(.785, .135, .15, .86);
   cursor: pointer;
-  cursor: url("../images/close.png"), pointer;
 }
 
 body.off-canvas-sidebar-open:after {
@@ -1267,7 +1266,6 @@ body.off-canvas-sidebar-open .layout {
   position: relative;
   background: #1b1d1f;
   color: #bfbfbf;
-  padding: 60px 0 0;
 }
 
 .footer a {
@@ -1304,8 +1302,7 @@ body.off-canvas-sidebar-open .layout {
 }
 
 .footer-copyright {
-  border-top: 1px solid rgba(255, 255, 255, .05);
-  padding: 20px 0;
+    padding: 100px 0;
 }
 
 

@@ -211,9 +211,13 @@
 
         <!-- Post-->
         <article class="post">
-          <div class="post-preview"><a target="_blank" href="https://01intern.com/magazine/archives/8718">
-            <%= image_tag("https://01intern.com/magazine/wp-content/uploads/2017/03/a83be28929594f7522cbd850d8d298bb.jpg", height: 'auto', width: '100%') %>
-          </a></div>
+          <div class="post-preview">
+            <q>
+              <a target="_blank" href="https://01intern.com/magazine/archives/8718">
+                <%= image_tag("https://01intern.com/magazine/wp-content/uploads/2017/03/a83be28929594f7522cbd850d8d298bb.jpg", height: 'auto', width: '100%') %>
+              </a>
+            </q>
+          </div>
           <div class="post-wrapper">
             <div class="post-header">
               <h2 class="post-title"><a target="_blank" href="https://01intern.com/magazine/archives/8718">Interviewed by recruitment agency.</a></h2>
@@ -229,9 +233,13 @@
 
         <!-- Post-->
         <article class="post">
-          <div class="post-preview"><a target="_blank" href="http://exidea.co.jp/interview/intern-interview06/">
-            <%= image_tag("http://exidea.co.jp/new/wp-content/uploads/2017/03/IMG_4485.jpg", height: 'auto', width: '100%') %>
-          </a></div>
+          <div class="post-preview">
+            <q>
+              <a target="_blank" href="http://exidea.co.jp/interview/intern-interview06/">
+                <%= image_tag("http://exidea.co.jp/new/wp-content/uploads/2017/03/IMG_4485.jpg", height: 'auto', width: '100%') %>
+              </a>
+            <q>
+          </div>
           <div class="post-wrapper">
             <div class="post-header">
               <h2 class="post-title"><a href="blog-single.html">Interviewed by the company I worked at.</a></h2>
@@ -248,7 +256,7 @@
       </div>
     </div>
     <div class="col-md-12">
-      <div class="text-center p-b-40"><%= link_to "Visit My Blog", blogs_path, class: "btn btn-lg btn-brand" %></div>
+     <div class="text-center p-b-40"><%= link_to "Visit My Blog", blogs_path, class: "btn btn-lg btn-brand" %></div>
     </div>
   </div>
 </section>
@@ -256,7 +264,7 @@
 
 
 <!-- Testimonials-->
-<section class="module parallax bg-dark bg-dark-30" data-background="assets/images/module-4.jpg">
+<section class="module parallax bg-dark bg-dark-30">
   <div class="container">
     <div class="row">
       <div class="col-md-6 offset-md-3">
@@ -320,7 +328,7 @@
 
       <div class="col-md-4">
         <div class="special-heading">
-          <h3>Fell free to conact me</h3>
+          <h3 id="3">Fell free to conact me</h3>
         </div>
         <p></p>
         <ul class="icon-list f-s-b">
@@ -332,39 +340,39 @@
       </div>
 
       <div class="col-md-8">
-        <form class="m-b-60" id="contact-form" method="post" novalidate>
+        <%= form_for @inquiry, html: {:url => inquiries_path, class: "m-b-60", id: "contact-form"} do |f| %>
           <div class="row">
 
             <div class="col-md-4">
               <div class="form-group">
-                <input class="form-control" type="text" name="name" placeholder="Name" required="">
+                <%= f.text_field :name, placeholder: "Name", class: "form-control" %>
                 <p class="help-block text-danger"></p>
               </div>
             </div>
             <div class="col-md-4">
               <div class="form-group">
-                <input class="form-control" type="email" name="email" placeholder="E-mail" required="">
+                <%= f.text_field :email, placeholder: "E-mail", class: "form-control" %>
                 <p class="help-block text-danger"></p>
               </div>
             </div>
             <div class="col-md-4">
               <div class="form-group">
-                <input class="form-control" type="text" name="subject" placeholder="Subject" required="">
+                <%= f.text_field :subject, placeholder: "Subject", class: "form-control" %>
                 <p class="help-block text-danger"></p>
               </div>
             </div>
             <div class="col-md-12">
               <div class="form-group">
-                <textarea class="form-control" name="message" placeholder="Message" rows="12" required=""></textarea>
+                <%= f.text_area :message, placeholder: "Message", class: "form-control", rows: "12" %>
               </div>
             </div>
             <div class="col-md-12 box-right-wrap">
               <div class="box-right">
-                  <input class="btn btn-round btn-brand"  type="submit" value="Send Request">
+                  <%= f.submit 'Send Request', class:"btn btn-round btn-brand" %>
               </div>
             </div>
           </div>
-        </form>
+        <% end %>
       </div>
     </div>
   </div>

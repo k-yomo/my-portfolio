@@ -1612,10 +1612,17 @@ body:after {
   -webkit-transition: opacity .2s cubic-bezier(.785, .135, .15, .86);
   transition: opacity .2s cubic-bezier(.785, .135, .15, .86);
   cursor: pointer;
-  cursor: url("../images/close.png"), pointer;
 }
 
 body.off-canvas-sidebar-open:after {
+  visibility: visible;
+  height: 100%;
+  width: 100%;
+  opacity: 1;
+  top: 0;
+}
+
+body.off-canvas-sidebar-open2:after {
   visibility: visible;
   height: 100%;
   width: 100%;
@@ -1630,16 +1637,19 @@ body.off-canvas-sidebar-open:after {
   left: 0;
 }
 
-body.off-canvas-sidebar-open .layout {
-  left: -270px;
-}
 
 .off-canvas-sidebar-open .off-canvas-sidebar {
   -webkit-transform: translateX(-425px);
   transform: translateX(-425px);
 }
 
-.off-canvas-sidebar {
+.off-canvas-sidebar-open2 .off-canvas-sidebar2 {
+  -webkit-transform: translateX(-425px);
+  transform: translateX(-425px);
+}
+
+.off-canvas-sidebar,
+.off-canvas-sidebar2 {
   background: #1b1d1f;
   position: fixed;
   right: -425px;
@@ -1669,12 +1679,34 @@ body.off-canvas-sidebar-open .layout {
   color: #fff;
 }
 
-.off-canvas-sidebar a {
+.off-canvas-sidebar2 h1,
+.off-canvas-sidebar2 .h1,
+.off-canvas-sidebar2 h2,
+.off-canvas-sidebar2 .h2,
+.off-canvas-sidebar2 h3,
+.off-canvas-sidebar2 .h3,
+.off-canvas-sidebar2 h4,
+.off-canvas-sidebar2 .h4,
+.off-canvas-sidebar2 h5,
+.off-canvas-sidebar2 .h5,
+.off-canvas-sidebar2 h6,
+.off-canvas-sidebar2 .h6 {
+  color: #fff;
+}
+
+.off-canvas-sidebar a,
+.off-canvas-sidebar2 a {
   color: #fff;
 }
 
 .off-canvas-sidebar a:hover,
 .off-canvas-sidebar a:focus {
+  color: #fff;
+  opacity: .7;
+}
+
+.off-canvas-sidebar2 a:hover,
+.off-canvas-sidebar2 a:focus {
   color: #fff;
   opacity: .7;
 }
@@ -4192,7 +4224,6 @@ a[rel~="gallery"]:hover {
   position: relative;
   background: #1b1d1f;
   color: #bfbfbf;
-  padding: 60px 0 0;
 }
 
 .footer a {
@@ -4229,8 +4260,7 @@ a[rel~="gallery"]:hover {
 }
 
 .footer-copyright {
-  border-top: 1px solid rgba(255, 255, 255, .05);
-  padding: 20px 0;
+  padding: 100px 0;
 }
 
 
@@ -4285,4 +4315,10 @@ a[rel~="gallery"]:hover {
   -webkit-border-radius: 10px;
   -moz-border-radius: 10px;
   border-radius: 10px;
+}
+
+@media (min-width: 800px) {
+  .mobile-login {
+    display: none !important;
+  }
 }

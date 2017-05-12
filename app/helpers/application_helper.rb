@@ -1,13 +1,28 @@
 module ApplicationHelper
   def login_helper
     if current_user.is_a?(GuestUser)
-      (link_to "Sign Up", "#", class: "open-offcanvas ") +
+      (link_to "Sign Up", new_user_registration_path) +
       "<br>".html_safe +
-      (link_to "Login", "#", class: "open-offcanvas2")
+      (link_to "Login", new_user_session_path)
     else
       link_to "Logout", destroy_user_session_path, method: :delete
     end
   end
+
+  def login_helper_l
+    if current_user.is_a?(GuestUser)
+      (link_to "Login", new_user_session_path)
+    else
+      (link_to "Logout", destroy_user_session_path, method: :delete)
+    end
+  end
+
+  def login_helper_r
+    if current_user.is_a?(GuestUser)
+     (link_to "Sign Up", new_user_registration_path)
+    end
+  end
+
 
   def source_helper(styles)
     if session[:source]
