@@ -2,47 +2,57 @@
 <html>
 <head>
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <title><%= @page_title %></title>
+  <meta name="description" content="">
   <%= csrf_meta_tags %>
 
   <meta name="keywords" content="<%= @seo_keywords %>" />
 
+  <!-- Web Fonts-->
+  <link href="https://fonts.googleapis.com/css?family=Poppins:500,600,700" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Hind:400,700" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Lora:400i" rel="stylesheet">
+
   <%= favicon_link_tag 'favicons/favicon.ico' %>
 
+  <%= stylesheet_link_tag "css/font-awesome.min.css", :media => "all" %>
+  <%= stylesheet_link_tag "css/linea-arrows.css", :media => "all" %>
+  <%= stylesheet_link_tag "css/linea-icons.css", :media => "all" %>
+  <%= stylesheet_link_tag "css/owl.carousel.css", :media => "all" %>
+  <%= stylesheet_link_tag "css/magnific-popup.css", :media => "all" %>
+  <%= stylesheet_link_tag "css/vertical.min.css", :media => "all" %>
+  <%= stylesheet_link_tag "css/pace-theme-minimal.css", :media => "all" %>
+  <%= stylesheet_link_tag "css/animate.css", :media => "all" %>
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
 </head>
 
 <body>
-  <div class="site-wrapper">
 
-    <div class="site-wrapper-inner">
+<!-- Layout-->
+<div class="layout">
 
-      <div class="cover-container">
+  <%= render "shared/application_nav" %>
 
-        <%= video_tag(
-                'cinemagraph.mp4',
-                'cinemagraph.webm',
-                id: 'background',
-                autoplay: true,
-                loop: true,
-                muted: true,
-                poster: 'background-sub.jpg'
-            )
-        %>
-
-        <%= render "shared/application_nav" %>
+  <!-- Wrapper-->
+  <div class="wrapper">
 
         <%= yield %>
 
-        <%= render "shared/application_footer" %>
-
         <%= alerts %>
 
-      </div>
-    </div>
-  </div>
-</body>
+   <%= render 'shared/application_footer' %>
+
+  <a class="scroll-top" href="#top"><i class="fa fa-angle-up"></i></a>
+</div>
+  <!-- Wrapper end-->
+</div>
+<!-- Layout end-->
+
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.1.1/js/tether.min.js"></script>
+  <script src="http://maps.googleapis.com/maps/api/js?key=AIzaSyA0rANX07hh6ASNKdBr4mZH0KZSqbHYc3Q"></script>
+
 </html>

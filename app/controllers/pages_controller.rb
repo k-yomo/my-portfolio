@@ -2,13 +2,7 @@ class PagesController < ApplicationController
   def home
     @posts = Blog.all
     @skills = Skill.all
-  end
-
-  def about
-    @skills = Skill.all.order(:id)
-  end
-
-  def contact
+    @portfolios = Portfolio.all
   end
 
   def tech_news

@@ -1,9 +1,86 @@
-<div class="masthead clearfix">
-  <div class="inner">
-    <h3 class="masthead-brand"><%=link_to "Kanji Yomoda", about_me_path %></h3>
-    <nav class="nav nav-masthead">
-    <%= nav_helper "nav-link app-nav", "span" %>
-    <%= login_helper "nav-link app-nav" %>
-    </nav>
+<header class="header header-center">
+  <div class="container-fluid">
+    <!-- Logos-->
+    <div class="inner-header">
+      <a class="inner-brand" href="index.html">Kanji Yomoda</a>
+    </div>
+    <!-- Navigation-->
+    <div class="inner-navigation collapse">
+      <div class="inner-navigation-inline">
+        <div class="inner-nav">
+          <ul>
+            <!-- Home-->
+            <li class="menu-item-has-children menu-item-has-mega-menu">
+              <%= link_to "Home", root_path %>
+            </li>
+            <!-- Home end-->
+            <!-- Pages-->
+            <li class="menu-item-has-children menu-item-has-mega-menu">
+              <%= link_to "About Me", "/#1" %>
+            </li>
+            <!-- Pages end-->
+            <!-- Portfolio-->
+            <li class="menu-item-has-children">
+              <%= link_to "Portfolio", portfolios_path %>
+            </li>
+            <!-- Portfolio end-->
+            <!-- Blog-->
+            <li class="menu-item-has-children">
+              <%= link_to "Blog", blogs_path %>
+            </li>
+            <!-- Blog end-->
+
+            <!-- Simple-->
+            <li><%= link_to "Contact", "/#2" %></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <!-- Extra menu-->
+    <div class="extra-nav">
+      <%= login_helper %>
+    </div>
+    <!-- Mobile menu-->
+    <div class="nav-toogle"><a href="#" data-toggle="collapse" data-target=".inner-navigation"><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></a></div>
+  </div>
+</header>
+
+<!-- Off canvas-->
+<div class="off-canvas-sidebar">
+  <div class="off-canvas-sidebar-wrapper">
+    <div class="off-canvas-header"><a class="close-offcanvas" href="#"><span class="arrows arrows-arrows-remove"></span></a></div>
+    <div class="off-canvas-content">
+      <!-- Text widget-->
+      <aside class="widget widget_text">
+        <div class="textwidget">
+          <p class="text-center"><img src="assets/images/logo-light.png" width="100" alt=""></p>
+        </div>
+      </aside>
+      <!-- Text widget-->
+      <aside class="widget widget_text">
+        <div class="textwidget">
+          <p class="text-center"><img src="assets/images/offcanvas.jpg" alt=""></p>
+        </div>
+      </aside>
+      <!-- Navmenu widget-->
+      <aside class="widget widget_nav_menu">
+        <ul class="menu">
+          <li class="menu-item menu-item-has-children"><a href="#">Home</a></li>
+          <li class="menu-item"><a href="#">About Us</a></li>
+          <li class="menu-item"><a href="#">Services</a></li>
+          <li class="menu-item"><a href="#">Portfolio</a></li>
+          <li class="menu-item"><a href="#">Blog</a></li>
+          <li class="menu-item"><a href="#">Shortcodes</a></li>
+        </ul>
+      </aside>
+      <ul class="social-icons">
+        <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+        <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+        <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+        <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+        <li><a href="#"><i class="fa fa-vk"></i></a></li>
+      </ul>
+    </div>
   </div>
 </div>
+<!-- Off canvas end-->
