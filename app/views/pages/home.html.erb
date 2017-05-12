@@ -168,8 +168,36 @@
 </section>
 <!-- Bars end-->
 
+<!-- Clients-->
+<section class="module-sm">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-8 offset-md-2 m-t-10">
+        <div class="module-title text-center m-b-15">
+          <h2>Portfolio</h2>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+
+      <div class="col-md-12">
+        <div class="owl-carousel clients-carousel" data-carousel-options="{&quot;items&quot;:&quot;4&quot;}">
+          <% @portfolios.each do |i| %>
+              <div class="client"><%= image_tag portfolio_img(i.thumb_image, 'thumb'), width: "100%" %></div>
+          <% end %>
+        </div>
+      </div>
+
+      <div class="col-md-12">
+        <div class="text-center"><%= link_to "View All", portfolios_path, class: "btn btn-lg btn-brand" %></div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- Clients end-->
+
 <!-- News-->
-<section class="module">
+<section class="module module-gray">
   <div class="container">
     <div class="row">
       <div class="col-md-8 offset-md-2">
@@ -272,35 +300,6 @@
   </div>
 </section>
 <!-- Testimonials end-->
-
-<!-- Clients-->
-<section class="module-sm module-gray">
-  <div class="container">
-    <div class="row">
-      <div class="col-md-8 offset-md-2 m-t-10">
-        <div class="module-title text-center m-b-15">
-          <h2>Portfolio</h2>
-        </div>
-      </div>
-    </div>
-    <div class="row">
-
-      <div class="col-md-12">
-        <div class="owl-carousel clients-carousel" data-carousel-options="{&quot;items&quot;:&quot;4&quot;}">
-          <% @portfolios.each do |i| %>
-            <div class="client"><%= image_tag portfolio_img(i.thumb_image, 'thumb'), width: "100%" %></div>
-          <% end %>
-        </div>
-      </div>
-
-      <div class="col-md-12">
-        <div class="text-center"><%= link_to "View All", portfolios_path, class: "btn btn-lg btn-brand" %></div>
-      </div>
-    </div>
-  </div>
-</section>
-<!-- Clients end-->
-
 
 <!-- Contact-->
 <section class="module">
