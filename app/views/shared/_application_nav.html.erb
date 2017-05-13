@@ -35,9 +35,8 @@
 
             <li class="mobile-login"><%= login_helper_l %></li>
 
-            <% if logged_in?(GuestUser) %>
-            <li class="mobile-login"><%= login_helper_r %></li>
-                <% end %>
+
+            <%= login_helper_r %>
           </ul>
         </div>
       </div>

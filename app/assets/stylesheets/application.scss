@@ -4276,6 +4276,7 @@ a[rel~="gallery"]:hover {
   padding: 100px 0;
 }
 
+
 @media (min-width: 901px) {
   #background {
     position: fixed;
@@ -4350,7 +4351,7 @@ a[rel~="gallery"]:hover {
   border-radius: 10px;
 }
 
-@media (min-width: 800px) {
+@media (min-width: 992px) {
   .mobile-login {
     display: none !important;
   }
@@ -4419,4 +4420,11 @@ a[rel~="gallery"]:hover {
     transform: rotateY(720deg) rotateZ(-45deg) translate(-20px, 20px);
     opacity: 0;
   }
+}
+
+#gritter-notice-wrapper {
+  position: fixed;
+  top: 80px;
+  right: 20px;
+  width: 301px;
 }

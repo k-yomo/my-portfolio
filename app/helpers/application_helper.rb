@@ -19,7 +19,7 @@ module ApplicationHelper
 
   def login_helper_r
     if current_user.is_a?(GuestUser)
-     (link_to "Sign Up", new_user_registration_path)
+     "<li class='mobile-login' >".html_safe + (link_to "Sign Up", new_user_registration_path) + "</li>".html_safe
     end
   end
 
