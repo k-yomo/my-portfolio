@@ -2694,6 +2694,20 @@ body.off-canvas-sidebar-open2:after {
   padding: 250px 0;
 }
 
+@media (max-width: 800px) {
+  .module,
+  .module-sm,
+  .module-header {
+    background-color: #f7f7f7;
+    background-position: 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    padding: 300px 0;
+
+  }
+}
+
 .module.module-divider-top,
 .module-sm.module-divider-top,
 .module-header.module-divider-top {
@@ -4264,7 +4278,7 @@ a[rel~="gallery"]:hover {
 
 
 #background {
-  position: absolute;
+  position: fixed;
   top: 50%;
   left: 50%;
   min-width: 100%;
@@ -4278,8 +4292,45 @@ a[rel~="gallery"]:hover {
   background-size: cover;
 }
 
+@media (min-width: 901px) {
+  #background {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -100;
+    -webkit-transform: translateX(-50%) translateY(-50%);
+    transform: translateX(-50%) translateY(-50%);
+    background: image-url('background-sub.jpg') no-repeat;
+    background-size: cover;
+  }
 
+  #background-mobile {
+    display: none;
+  }
+}
 
+@media (max-width: 900px) {
+  video {
+    display: none;
+}
+  #background-mobile {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -100;
+    -webkit-transform: translateX(-50%) translateY(-50%);
+    transform: translateX(-50%) translateY(-50%);
+    background-size: cover;
+  }
+}
 /* Custom*/
 
 .skillset {
