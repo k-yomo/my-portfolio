@@ -4365,7 +4365,9 @@ a[rel~="gallery"]:hover {
   position: absolute;
   bottom: 20px;
   top: 120%;
-  left: 46%;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
   padding-top: 60px;
   z-index: 2;
   display: inline-block;
