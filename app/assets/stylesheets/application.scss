@@ -4381,7 +4381,7 @@ a[rel~="gallery"]:hover {
   position: absolute;
   bottom: 20px;
   top: 120%;
-  left: 50%;
+  left: 46%;
   padding-top: 60px;
   z-index: 2;
   display: inline-block;
@@ -4389,6 +4389,7 @@ a[rel~="gallery"]:hover {
   transform: translate(0, -50%);
   text-decoration: none;
   color: #fff;
+  font-weight: 600;
 }
 
 .scroll-down a:hover {
