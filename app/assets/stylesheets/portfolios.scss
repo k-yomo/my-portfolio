@@ -1308,7 +1308,7 @@ body.off-canvas-sidebar-open .layout {
 
 #background {
   position: fixed;
-  top: 50%;
+  top: 300px;
   left: 50%;
   min-width: 100%;
   min-height: 100%;
@@ -1317,7 +1317,6 @@ body.off-canvas-sidebar-open .layout {
   z-index: -100;
   -webkit-transform: translateX(-50%) translateY(-50%);
   transform: translateX(-50%) translateY(-50%);
-  background: image-url('background-sub.jpg') no-repeat;
   background-size: cover;
 }
 
