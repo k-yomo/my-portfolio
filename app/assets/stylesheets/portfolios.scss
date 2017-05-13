@@ -1305,10 +1305,9 @@ body.off-canvas-sidebar-open .layout {
     padding: 100px 0;
 }
 
-
 #background {
   position: fixed;
-  top: 300px;
+  top: 50%;
   left: 50%;
   min-width: 100%;
   min-height: 100%;
@@ -1326,14 +1325,31 @@ body.off-canvas-sidebar-open .layout {
   padding-top: 6rem;
   padding-bottom: 6rem;
   margin-bottom: 0;
-  background: url("https://s3.ca-central-1.amazonaws.com/kanji-portfolio-bucket/uploads/background-image/portfolio-background.jpg") no-repeat fixed center;
   background-size: cover;
+  background-color: transparent;
 }
 
+@media screen and (max-width:950px) {
+  .jumbotron {
+    padding: 8.5rem 0 3.5rem;
+  }
+}
+
+@media screen and (max-width:500px) {
+  .jumbotron {
+    padding: 8.5rem 0;
+  }
+}
 
 @media screen and (max-width:400px) {
   .jumbotron {
-    padding: 2.5rem 0;
+    padding: 5.5rem 0;
+  }
+}
+
+@media screen and (max-width:350px) {
+  .jumbotron {
+    padding: 4.5em 0 2.5rem;
   }
 }
 

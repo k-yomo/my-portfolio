@@ -1369,10 +1369,17 @@ body.off-canvas-sidebar-open .layout {
   text-align: center;
 }
 
+@media screen and (max-width:950px) {
+  .blog-header {
+    min-height: 280px;
+    padding: 8rem 0 1.5rem;
+  }
+}
+
 @media screen and (max-width:500px) {
   .blog-header {
     min-height: 280px;
-    padding: 7.5rem 0 0rem;
+    padding: 7.5rem 0 0;
   }
 }
 
@@ -1405,7 +1412,7 @@ body.off-canvas-sidebar-open .layout {
 
 .blog-description {
   font-size: 1.1rem;
-  color: #666;
+  color: #999;
 }
 
 @media (min-width: 40em) {
