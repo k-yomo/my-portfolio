@@ -4377,10 +4377,11 @@ a[rel~="gallery"]:hover {
   text-decoration: none;
   color: #fff;
   font-weight: 600;
+  opacity: 0.5;
 }
 
 .scroll-down a:hover {
-  opacity: 0.5;
+  opacity: 1.0;
 }
 
 .scroll-down a span {
