@@ -1403,8 +1403,11 @@ footer p {
 /* Custom styles */
 
 .portfolio-container {
-  padding-top: 30px;
+  padding: 40px 30px 30px;
   overflow: hidden;
+  background: #fff;
+  margin-top: 20px;
+  margin-bottom: 30px;
 }
 
 .navbar-inverse .navbar-toggler:hover {

@@ -126,46 +126,16 @@
       </div>
     </div>
     <div class="row">
+      <% @skills.each do |skill| %>
       <div class="col-md-6">
         <div class="progress-item">
-          <div class="progress-title">Ruby on Rails</div>
+          <div class="progress-title"><%= skill.title %></div>
           <div class="progress">
-            <div class="progress-bar progress-bar-brand" aria-valuenow="10" role="progressbar" aria-valuemin="0" aria-valuemax="100"></div>
-          </div>
-        </div>
-        <div class="progress-item">
-          <div class="progress-title">javascirpt</div>
-          <div class="progress">
-            <div class="progress-bar progress-bar-brand" aria-valuenow="25" role="progressbar" aria-valuemin="0" aria-valuemax="100"></div>
-          </div>
-        </div>
-        <div class="progress-item">
-          <div class="progress-title">HTML / CSS</div>
-          <div class="progress">
-            <div class="progress-bar progress-bar-brand" aria-valuenow="50" role="progressbar" aria-valuemin="0" aria-valuemax="100"></div>
+            <div class="progress-bar progress-bar-brand" aria-valuenow="<%= skill.percent_utilized %>" role="progressbar" aria-valuemin="0" aria-valuemax="100"></div>
           </div>
         </div>
       </div>
-      <div class="col-md-6">
-        <div class="progress-item">
-          <div class="progress-title">Content Marketing</div>
-          <div class="progress">
-            <div class="progress-bar progress-bar-brand" aria-valuenow="60" role="progressbar" aria-valuemin="0" aria-valuemax="100"></div>
-          </div>
-        </div>
-        <div class="progress-item">
-          <div class="progress-title">SEO</div>
-          <div class="progress">
-            <div class="progress-bar progress-bar-brand" aria-valuenow="60" role="progressbar" aria-valuemin="0" aria-valuemax="100"></div>
-          </div>
-        </div>
-        <div class="progress-item">
-          <div class="progress-title">Analytics</div>
-          <div class="progress">
-            <div class="progress-bar progress-bar-brand" aria-valuenow="30" role="progressbar" aria-valuemin="0" aria-valuemax="100"></div>
-          </div>
-        </div>
-      </div>
+      <% end %>
     </div>
   </div>
 </section>
