@@ -4,7 +4,7 @@ class InquiryMailer < ActionMailer::Base
 
   def received_email(inquiry)
     @inquiry = inquiry
-    mail(:subject => 'You got an email.')
+    mail(subject: 'You got an email.')
   end
 
 end
