@@ -86,4 +86,19 @@ Rails.application.configure do
 
   config.action_cable.allowed_request_origins = ['https://kanjiyomoda-portfolio.herokuapp.com', 'http://kanjiyomoda-portfolio.herokuapp.com']
   config.action_cable.url = "wss://kanjiyomoda-portfolio.herokuapp.com/cable"
+
+  config.action_mailer.default_url_options = { :host => 'kanjiyomoda-portfolio.herokuapp.com' }
+  config.action_mailer.delivery_method = :smtp
+  config.action_mailer.perform_deliveries = true
+  config.action_mailer.raise_delivery_errors = false
+  config.action_mailer.default :charset => "utf-8"
+  config.action_mailer.smtp_settings = {
+      address:               'smtp.gmail.com',
+      port:      	           587,
+      domain:                'kanjiyomoda-portfolio.herokuapp.com',
+      user_name:             'kanji.yy@gmail.com',
+      password:              'yomoda0705',
+      authentication:        'plain',
+      enable_starttls_auto:  true
+  }
 end
