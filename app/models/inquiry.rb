@@ -3,6 +3,6 @@ class Inquiry
 
   attr_accessor :name, :email, :subject, :message
 
-  validates :name, :presence => {:message => '名前を入力してください'}
-  validates :email, :presence => {:message => 'メールアドレスを入力してください'}
+  validates :name, :presence => {:message => 'Put your name please'}
+  validates :email, :presence => {:message => 'Put your mail adress please'}
 end

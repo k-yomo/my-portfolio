@@ -16,7 +16,7 @@ class PagesController < ApplicationController
   def inquiry
     @inquiry = Inquiry.new(inquiry_params)
     InquiryMailer.received_email(@inquiry).deliver
-    redirect_to "/#3", notice: 'I recieved your inquiry'
+    redirect_to "/#3", notice: 'I recieved your inquiry. Thanks!'
   end
 
   def inquiry_params
