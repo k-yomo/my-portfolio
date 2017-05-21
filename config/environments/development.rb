@@ -61,8 +61,8 @@ Rails.application.configure do
       address:               'smtp.gmail.com',
       port:      	           587,
       domain:                'kanjiyomoda-portfolio.herokuapp.com',
-      user_name:             'kanji.yy@gmail.com',
-      password:              'yomoda0705',
+      user_name: ENV["GMAIL_USERNAME"],
+      password: ENV["GMAIL_PASSWORD"],
       authentication:        'plain',
       enable_starttls_auto:  true
   }
