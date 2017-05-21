@@ -315,7 +315,7 @@
           <i class="fa fa-spinner fa-spin fa-2x"></i>Sending message...
         </div>
         <div id="sent-inquery"></div>
-        <%= form_for @inquiry, html: {url: inquiries_path, remote: true, class: "m-b-60", id: "contact-form"} do |f| %>
+        <%= form_for @inquiry, html: {:url => inquiries_path, remote: true, class: "m-b-60", id: "contact-form"} do |f| %>
           <div class="row">
 
             <div class="col-md-4">
