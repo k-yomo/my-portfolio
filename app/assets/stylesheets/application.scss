@@ -431,6 +431,7 @@ select.form-control-sm:not([size]):not([multiple]) {
   margin-top: 3.1px;
   margin-bottom: 0;
   cursor: pointer;
+  box-shadow: none;
 }
 
 .btn:focus,
