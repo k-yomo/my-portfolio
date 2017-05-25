@@ -846,6 +846,12 @@ body .layout {
   padding: 100px 0;
 }
 
+@media (max-width: 901px) {
+  .footer-copyright {
+    padding: 50px;
+  }
+}
+
 
 #background {
   position: fixed;
