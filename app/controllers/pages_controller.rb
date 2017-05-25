@@ -4,7 +4,7 @@ class PagesController < ApplicationController
 
   def home
     @posts = Blog.all
-    @skills = Skill.all
+    @skills = Skill.all.order(:id)
     @portfolios = Portfolio.all
     @inquiry = Inquiry.new
   end
