@@ -1370,7 +1370,7 @@ body.off-canvas-sidebar-open .layout {
 
 .blog-header {
   min-height: 280px;
-  padding: 5rem 0 3rem;
+  padding: 5.5rem 0 3rem;
   border-bottom: .05rem solid #eee;
   text-align: center;
 }
@@ -1601,6 +1601,30 @@ body.off-canvas-sidebar-open .layout {
 }
 .m-b-30 {
   margin-bottom: 30px;
+}
+
+.topic-tag {
+  display: inline-block;
+  border: solid 1px #ddd;
+  text-align: center;
+  border-radius: .25rem;
+  padding: 4px 8px;
+  margin-bottom: 5px;
+}
+
+.topic-tag:hover {
+  opacity: 0.7;
+  color: #014c8c;
+}
+
+.sns-tag {
+  width: 31%;
+  display: inline-block;
+  border: solid 1px #ddd;
+  text-align: center;
+  border-radius: .25rem;
+  padding: 4px 8px;
+  margin-bottom: 5px;
 }
 
 

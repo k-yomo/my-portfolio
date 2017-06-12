@@ -12,16 +12,16 @@
 
 
   <div class="sidebar-module">
-    <h4>Topics</h4>
+    <h4>Tag</h4>
     <% @side_bar_topics.each do  |topic| %>
-        <span><%= link_to topic.title, topic_path(topic) %></span>
+     <%= link_to topic.title, topic_path(topic), class: "topic-tag" %>
     <% end %>
   </div>
 
   <div class="sidebar-module">
     <h4>SNS</h4>
-    <a target="_blank" href="https://github.com/yomoda07"><%= fa_icon "github", class: "fa-2x" %></a>／
-    <a target="_blank" href="https://www.facebook.com/kanji.yomoda"><%= fa_icon "facebook", class: "fa-2x" %></a>／
-    <a target="_blank" href="http://linkedin.com/in/kanji-yomoda"><%= fa_icon "linkedin", class: "fa-2x" %></a>
+    <a class= "sns-tag" href="https://github.com/yomoda07"><%= fa_icon "github", class: "fa-2x" %></a>
+    <a class= "sns-tag" href="https://www.facebook.com/kanji.yomoda"><%= fa_icon "facebook", class: "fa-2x" %></a>
+    <a class= "sns-tag" target="_blank" href="http://linkedin.com/in/kanji-yomoda"><%= fa_icon "linkedin", class: "fa-2x" %></a>
   </div>
 </div>
