@@ -2,6 +2,6 @@
   <div class="container">
     <h1 class="blog-title"><%= link_to "My Blog", blogs_path %></h1>
     <p class="lead blog-description">Ruby on Rails development track</p>
-      <%= link_to 'Write a New Blog', new_blog_path, class: "btn btn-primary" if logged_in?(:site_admin) %>
+      <%= link_to 'Write a New Blog', new_blog_path, class: "btn btn-primary btn-brand" if logged_in?(:site_admin) %>
   </div>
 </div>
