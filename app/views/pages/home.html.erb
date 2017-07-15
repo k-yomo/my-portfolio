@@ -24,7 +24,7 @@
 </section>
 <!-- Page Header end-->
 <div id="1"></div>
-<!-- Services-->
+<!-- About me-->
 <section class="module">
   <div class="container">
     <div class="row">
@@ -145,9 +145,9 @@
     </div>
   </div>
 </section>
-<!-- Services end-->
+<!-- About me end-->
 
-<!-- Bars-->
+<!-- Skill Bars-->
 <section class="module module-gray skillset  p-b-50">
   <div class="container">
     <div class="row">
@@ -171,9 +171,9 @@
     </div>
   </div>
 </section>
-<!-- Bars end-->
+<!-- Skill Bars end-->
 
-<!-- Clients-->
+<!-- Portfolios-->
 <section class="module-sm">
   <div class="container">
     <div class="row">
@@ -188,7 +188,11 @@
       <div class="col-md-12">
         <div class="owl-carousel clients-carousel" data-carousel-options="{&quot;items&quot;:&quot;4&quot;}">
           <% @portfolios.each do |i| %>
-              <div class="client"><%= image_tag portfolio_img(i.thumb_image, 'thumb'), width: "100%" %></div>
+              <div class="client">
+                <%= link_to(portfolio_show_path(i)) do %>
+                    <%= image_tag portfolio_img(i.thumb_image, 'thumb'), width: "100%" %>
+                <% end %>
+              </div>
           <% end %>
         </div>
       </div>
@@ -199,9 +203,9 @@
     </div>
   </div>
 </section>
-<!-- Clients end-->
+<!-- Portfolios end-->
 
-<!-- News-->
+<!-- Media-->
 <section class="module module-gray">
   <div class="container">
     <div class="row">
@@ -265,10 +269,10 @@
     </div>
   </div>
 </section>
-<!-- News end-->
+<!-- Media end-->
 
 
-<!-- Testimonials-->
+<!-- Quotes-->
 <section class="module parallax bg-dark bg-dark-30">
   <div class="container">
     <div class="row">
@@ -313,7 +317,7 @@
     </div>
   </div>
 </section>
-<!-- Testimonials end-->
+<!-- Quotes end-->
 
 <!-- Contact-->
 <section class="module">
