@@ -19,6 +19,6 @@ $(document).ready(function() {
             .tiPause(100)
             .tiType("living in San Francisco, ")
             .tiPause(350)
-            .tiType("WA.")
+            .tiType("CA.")
     }, 2000);
 });
