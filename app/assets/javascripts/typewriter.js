@@ -17,8 +17,8 @@ $(document).ready(function() {
             .tiPause(200)
             .tiType(" I'm a Growth Hacker ")
             .tiPause(100)
-            .tiType("living in vancouver, ")
+            .tiType("living in San Francisco, ")
             .tiPause(350)
-            .tiType("BC.")
+            .tiType("WA.")
     }, 2000);
 });
