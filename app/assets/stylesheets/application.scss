@@ -243,7 +243,15 @@ ol {
 
 ul > li,
 ol > li {
-  margin: 0 0 5px;
+  margin: 10px 0 0px 20px;
+  line-height: 23px;
+}
+
+.about-me-card li:before {
+  font-family: FontAwesome;
+  content: "\f00c";
+  position: absolute;
+  left : 1em;
 }
 
 em {
