@@ -17,8 +17,8 @@ $(document).ready(function() {
             .tiPause(200)
             .tiType(" I'm Software Engineer ")
             .tiPause(100)
-            .tiType("living in San Francisco, ")
+            .tiType("living in Toronto, ")
             .tiPause(350)
-            .tiType("CA.")
+            .tiType("ON.")
     }, 2000);
 });
