@@ -1,24 +1,13 @@
 # First Portfolio Application 
 
-> This is a My first Ruby on Rails5 application portfolio.
+This is a My portfolio built with Ruby on Rails.
 
-### Features
+## Features
 
--  Real time chat engine for comments
+- Real time chat engine for comments
 - Blog
 - Portfolio
 - Drag and drop interface
 
-### Code Example
- 
- ```ruby
- def my great_method
-puts "here it is"
-end
-```
 
- ```javascript
- alert('This is test.');
-  ```
-  
   
