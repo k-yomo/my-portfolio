@@ -1,6 +1,10 @@
 # First Portfolio Application 
 
-This is a My portfolio built with Ruby on Rails.
+This is a My portfolio site built with Ruby on Rails. There are introduction page, application portfolio, and blog in the website.
+
+
+URL:
+[http://kanjiyomoda-portfolio.herokuapp.com](http://kanjiyomoda-portfolio.herokuapp.com)
 
 ## Features
 
