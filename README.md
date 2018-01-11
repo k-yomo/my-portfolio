@@ -1,24 +1,17 @@
 # First Portfolio Application 
 
-> This is a My first Ruby on Rails5 application portfolio.
+This is a My portfolio site built with Ruby on Rails. There are introduction page, application portfolio, and blog in the website.
 
-### Features
 
--  Real time chat engine for comments
+URL:
+[http://kanjiyomoda-portfolio.herokuapp.com](http://kanjiyomoda-portfolio.herokuapp.com)
+
+## Features
+
+- Real time chat engine for comments
 - Blog
 - Portfolio
 - Drag and drop interface
 
-### Code Example
- 
- ```ruby
- def my great_method
-puts "here it is"
-end
-```
 
- ```javascript
- alert('This is test.');
-  ```
-  
   
