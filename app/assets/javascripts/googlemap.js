@@ -3,7 +3,7 @@ var map;
 
 function initMap() {
     map = new google.maps.Map(document.getElementById('map'), {
-        center: {lat: 43.6565353, lng: -79.6010328},
+        center: {lat: 35.6781707, lng: 139.636525},
         zoom: 10,
         scrollwheel: false,
         styles: [
@@ -135,7 +135,7 @@ function initMap() {
     });
 
     var marker = new google.maps.Marker({
-        position:  {lat: 43.6565353, lng: -79.6010328},
+        position:  {lat: 35.6781707, lng: 139.636525},
         map: map,
         icon: 'https://s3.ca-central-1.amazonaws.com/kanji-portfolio-bucket/uploads/icon/map-icon.png'
     });
